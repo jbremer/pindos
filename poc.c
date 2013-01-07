@@ -52,6 +52,7 @@ void pindos(unsigned int size)
         "nop-instructions: %d\n"
         "executing nops:   %lld\n",
         size, sum(size));
+    fflush(stdout);
 
     unsigned int ticks = GetTickCount();
 
@@ -114,6 +115,7 @@ void pindos2(unsigned int size, unsigned int step)
         "nop-instructions: %d\n"
         "executing nops:   %lld\n",
         size, step * sum(size / step));
+    fflush(stdout);
 
     unsigned int ticks = GetTickCount();
 
@@ -125,7 +127,6 @@ void pindos2(unsigned int size, unsigned int step)
 int main()
 {
     pindos(0x10000);
-    getchar();
     pindos2(0x1000000, 0x10000);
     Sleep(INFINITE);
 }
