@@ -128,5 +128,4 @@ int main()
 {
     pindos(0x10000);
     pindos2(0x1000000, 0x10000);
-    Sleep(INFINITE);
 }
