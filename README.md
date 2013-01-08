@@ -7,11 +7,9 @@ described in [this blogpost][url].
 
 Compiling the code can be done using the following commands:
 
-<p>
-    [bash]
-    $ gcc -std=c99 -Wall -o poc.exe poc.c
-    ...
-    $ make
-    ...
-    [/bash]
-</p>
+```bash
+$ gcc -std=c99 -Wall -o poc.exe poc.c
+...
+$ make
+...
+```
